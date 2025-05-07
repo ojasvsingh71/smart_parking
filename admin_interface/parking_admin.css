@@ -1,0 +1,143 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("parking-management-system.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+
+#layout {
+    margin-bottom: 30px;
+}
+
+#layout h2 {
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.parking-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slot:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.slot.occupied {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.slot.available {
+    background-color: #28a745;
+    color: white;
+}
+
+
+#pricing {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pricing h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#pricing .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+
+#summary {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#summary h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.summary-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+

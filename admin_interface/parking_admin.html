@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Admin Interface</title>
+    <link rel="stylesheet" href="parking_admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Parking Admin Dashboard</h1>
+            <p>Manage and monitor parking spaces in real-time</p>
+        </header>
+
+        <section id="layout">
+            <h2>Parking Layout</h2>
+            <div class="parking-grid">
+                <div class="slot available" id="slot1" onclick="toggleSlot('slot1')">Slot 1</div>
+                <div class="slot available" id="slot2" onclick="toggleSlot('slot2')">Slot 2</div>
+                <div class="slot available" id="slot3" onclick="toggleSlot('slot3')">Slot 3</div>
+                <div class="slot available" id="slot4" onclick="toggleSlot('slot4')">Slot 4</div>
+                <div class="slot available" id="slot5" onclick="toggleSlot('slot5')">Slot 5</div>
+                <div class="slot available" id="slot6" onclick="toggleSlot('slot6')">Slot 6</div>
+                <div class="slot available" id="slot7" onclick="toggleSlot('slot7')">Slot 7</div>
+                <div class="slot available" id="slot8" onclick="toggleSlot('slot8')">Slot 8</div>
+                <div class="slot available" id="slot9" onclick="toggleSlot('slot9')">Slot 9</div>
+                <div class="slot available" id="slot10" onclick="toggleSlot('slot10')">Slot 10</div>
+                <div class="slot available" id="slot11" onclick="toggleSlot('slot11')">Slot 11</div>
+                <div class="slot available" id="slot12" onclick="toggleSlot('slot12')">Slot 12</div>
+                <div class="slot available" id="slot13" onclick="toggleSlot('slot13')">Slot 13</div>
+                <div class="slot available" id="slot14" onclick="toggleSlot('slot14')">Slot 14</div>
+                <div class="slot available" id="slot15" onclick="toggleSlot('slot15')">Slot 15</div>
+                <div class="slot available" id="slot16" onclick="toggleSlot('slot16')">Slot 16</div>
+                <div class="slot available" id="slot17" onclick="toggleSlot('slot17')">Slot 17</div>
+                <div class="slot available" id="slot18" onclick="toggleSlot('slot18')">Slot 18</div>
+                <div class="slot available" id="slot19" onclick="toggleSlot('slot19')">Slot 19</div>
+                <div class="slot available" id="slot20" onclick="toggleSlot('slot20')">Slot 20</div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Parking Price</h2>
+            <p>Flat Rate: <span class="price">₹50 per hour</span></p>
+        </section>
+
+        <section id="summary">
+            <h2>Parking Summary</h2>
+            <div class="summary-details">
+                <p>Total Slots: 20</p>
+                <p id="availableSlots">Available Slots: 20</p>
+                <p id="occupiedSlots">Occupied Slots: 0</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>2024 Parking Management System</p>
+    </footer>
+
+    <script src="parking_admin.js"></script>
+</body>
+</html>

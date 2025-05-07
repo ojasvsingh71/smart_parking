@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking User Interface</title>
+    <link rel="stylesheet" href="user_style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Welcome to Smart Parking</h1>
+            <p>Find and reserve your parking space in seconds!</p>
+        </header>
+
+       
+        <section id="parking">
+            <h2>Available Parking Spaces</h2>
+            <div class="parking-grid">
+                <div class="slot available" id="slot1" onclick="reserveSlot('slot1')">Slot 1</div>
+                <div class="slot available" id="slot2" onclick="reserveSlot('slot2')">Slot 2</div>
+                <div class="slot available" id="slot3" onclick="reserveSlot('slot3')">Slot 3</div>
+                <div class="slot available" id="slot4" onclick="reserveSlot('slot4')">Slot 4</div>
+                <div class="slot available" id="slot5" onclick="reserveSlot('slot5')">Slot 5</div>
+                <div class="slot available" id="slot6" onclick="reserveSlot('slot6')">Slot 6</div>
+                <div class="slot available" id="slot7" onclick="reserveSlot('slot7')">Slot 7</div>
+                <div class="slot available" id="slot8" onclick="reserveSlot('slot8')">Slot 8</div>
+                <div class="slot available" id="slot9" onclick="reserveSlot('slot9')">Slot 9</div>
+                <div class="slot available" id="slot10" onclick="reserveSlot('slot10')">Slot 10</div>
+                <div class="slot available" id="slot11" onclick="reserveSlot('slot11')">Slot 11</div>
+                <div class="slot available" id="slot12" onclick="reserveSlot('slot12')">Slot 12</div>
+                <div class="slot available" id="slot13" onclick="reserveSlot('slot13')">Slot 13</div>
+                <div class="slot available" id="slot14" onclick="reserveSlot('slot14')">Slot 14</div>
+                <div class="slot available" id="slot15" onclick="reserveSlot('slot15')">Slot 15</div>
+                <div class="slot available" id="slot16" onclick="reserveSlot('slot16')">Slot 16</div>
+                <div class="slot available" id="slot17" onclick="reserveSlot('slot17')">Slot 17</div>
+                <div class="slot available" id="slot18" onclick="reserveSlot('slot18')">Slot 18</div>
+                <div class="slot available" id="slot19" onclick="reserveSlot('slot19')">Slot 19</div>
+                <div class="slot available" id="slot20" onclick="reserveSlot('slot20')">Slot 20</div>
+            </div>
+        </section>
+
+        
+        <section id="pricing">
+            <h2>Parking Pricing</h2>
+            <p>Flat Rate: <span class="price">₹50 per hour</span></p>
+        </section>
+
+        <section id="reservation" style="display: none;">
+            <h2>Reservation Details</h2>
+            <form id="reservationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name" />
+                <label for="vehicle">Vehicle Number:</label>
+                <input type="text" id="vehicle" required placeholder="Enter vehicle number" />
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" id="duration" min="1" required placeholder="Enter duration" />
+                <button type="submit" class="btn">Confirm Reservation</button>
+            </form>
+        </section>
+
+        
+        <footer>
+            <p>2024 Smart Parking System</p>
+        </footer>
+    </div>
+
+    <script src="user_script.js"></script>
+</body>
+</html>
